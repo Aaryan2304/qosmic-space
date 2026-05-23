@@ -1,0 +1,34 @@
+# Large model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Large numpy/pickle arrays (evaluation intermediates)
+*.npy
+*.npz
+*.pkl
+
+# Dataset files (38-Cloud is 17GB — download separately, see README)
+data/
+*/data/
+
+# ERA5/netcdf downloads
+*.nc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.venv/
+env/

@@ -1,0 +1,16 @@
+{
+  "total_passes": 300,
+  "simulation_days": 30,
+  "passes_per_day": 10,
+  "clear_threshold": 0.6,
+  "fallbacks": 0,
+  "fallback_pct": 0.0,
+  "conflicts": 46,
+  "per_station": {
+    "Leh": 106,
+    "Jodhpur": 116,
+    "Challakere": 3,
+    "Sriharikota": 20,
+    "Shillong": 55
+  }
+}

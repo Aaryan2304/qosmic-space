@@ -1,0 +1,52 @@
+{
+  "Leh": {
+    "lat": 34.15,
+    "lon": 77.58,
+    "annual_clear_pct": 73.9,
+    "clearest_month": "Sep",
+    "cloudiest_month": "Feb"
+  },
+  "Jodhpur": {
+    "lat": 26.24,
+    "lon": 73.02,
+    "annual_clear_pct": 77.9,
+    "clearest_month": "Oct",
+    "cloudiest_month": "Jul"
+  },
+  "Challakere": {
+    "lat": 14.3,
+    "lon": 76.5,
+    "annual_clear_pct": 45.9,
+    "clearest_month": "Jan",
+    "cloudiest_month": "Jul"
+  },
+  "Sriharikota": {
+    "lat": 13.72,
+    "lon": 80.23,
+    "annual_clear_pct": 57.0,
+    "clearest_month": "Feb",
+    "cloudiest_month": "Jul"
+  },
+  "Shillong": {
+    "lat": 25.58,
+    "lon": 91.88,
+    "annual_clear_pct": 51.0,
+    "clearest_month": "Feb",
+    "cloudiest_month": "Jul"
+  },
+  "network_1_stations": {
+    "annual_availability_pct": 90.1
+  },
+  "network_2_stations": {
+    "annual_availability_pct": 100.0
+  },
+  "network_3_stations": {
+    "annual_availability_pct": 100.0
+  },
+  "network_4_stations": {
+    "annual_availability_pct": 100.0
+  },
+  "network_5_stations": {
+    "annual_availability_pct": 100.0
+  }
+}
