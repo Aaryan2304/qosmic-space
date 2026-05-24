@@ -171,7 +171,7 @@ This document describes the Airtable base structure and populates it with 5 samp
 3. Link the tables: Purchase Requests → Purchase Orders → Vendors, Inspections → Purchase Orders, Scorecards → Vendors
 4. Create the views listed for each table
 5. Import the 5 sample POs above
-6. Set up the 5 Make.com automations from tool-stack.md
+6. Set up the 2 Make.com Automations from tool-stack.md (2 live on Free tier, 1 planned for Core upgrade)
 7. Share the base with the procurement person (edit access) and the CTO/CEO (comment access for approvals)
 
 **Time to build: 2-3 hours** for someone familiar with Airtable. The free plan is sufficient.

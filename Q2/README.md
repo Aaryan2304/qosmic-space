@@ -43,11 +43,15 @@ The Airtable base is live at:
 
 All built on free tiers:
 - **Airtable Free** — Database, Kanban, Forms, linked records
-- **Make.com Free** — Automation engine (documented, not connected)
-- **Slack Free** — Alert channel (documented, not connected)
-- **Gmail** — Vendor communications
+- **Make.com Free** — 2 automations live (overdue PO alert, high-value request alert)
+- **Slack Free** — #procurement-alerts channel receiving automated notifications
 
 Total tooling cost: $0/month.
+
+**Connected automations (live):**
+1. PO overdue → Slack alert via Make.com
+2. Purchase request > ₹50,000 → Slack alert for CEO approval
+3. *(Planned)* PO not acknowledged in 3 days → requires Make Core ($12/mo) for 3rd scenario slot
 
 ## How to Read This
 

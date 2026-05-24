@@ -60,7 +60,7 @@ All alerts are configured in Airtable automations. Each sends a Slack message to
 | Quarterly budget exceed | Sum of PO values for this vendor in current quarter > 120% of quarterly budget | Slack alert + email | Procurement + CEO |
 | Inspection pending | Status = Delivered for > 2 business days, not yet inspected | Slack reminder | QA/inspector + procurement |
 
-**Implementation:** Each alert is a single Airtable automation with a conditional trigger. No external tooling needed — 25,000 automation runs/month on the free Airtable plan covers this easily.
+**Implementation:** 2 alerts are automated via Make.com (see tool-stack.md). The remaining alerts are manual processes handled by the procurement person during their daily review of the Airtable Kanban board. Full automation of all 7 alerts would require upgrading Make.com to Core for additional scenario slots.
 
 ---
 

@@ -62,7 +62,12 @@ The question is not "can AI do this?" but "can AI do this *reliably enough* that
 ## Implementation Note
 
 All AI automations described above use Claude (or any LLM with a good API) triggered by Make.com. The cost is:
-- Make.com Free: 1,000 credits/month (sufficient for ~20-30 AI-triggered automations)
+- Make.com Free: 1,000 credits/month (sufficient for ~2 active scenarios at hourly intervals)
 - Claude API: ~$0.01-0.03 per automation call (Haiku) → ~$0.20-0.90/month for the volume described
 
 **Total AI automation cost: under $1/month** on top of the base tool stack.
+
+**Currently deployed automations (2 on Make.com Free):**
+1. PO overdue → Slack alert
+2. High-value request (₹50,000+) → Slack alert for CEO approval
+3. *(Planned)* PO not acknowledged in 3 days → Slack alert (requires Make Core upgrade for 3rd scenario)

@@ -19,7 +19,8 @@
 | Item | Cost | Notes |
 |------|------|-------|
 | Airtable Free | $0 | Sufficient for 15-25 POs/month |
-| Make.com Free | $0 | 1,000 credits/month |
+| Make.com Free | $0 | 1,000 credits/month, 2 active scenarios, 15-min minimum interval |
+| Make Core (optional, for 3rd automation) | $12/mo | 10,000 credits/month, unlimited 3rd+ automations |
 | Slack Free | $0 | |
 | Gmail / Google Workspace | $0-6 | Free personal Gmail or $6 for Workspace |
 | Claude API (for AI automations) | ~$0.50 | ~50 automation calls/month at $0.01/call |
@@ -27,6 +28,8 @@
 | Customs broker fee (per shipment) | $31-83 | Per international shipment into India (verified: azafra.mx reports ₹2,000-10,000 typical) |
 
 **Total recurring cost (excluding shipping/insurance/brokerage): $0-6.50/month**
+
+With Make Core upgrade (for 3rd automation): **$12-18.50/month**
 
 The shipping insurance and customs broker fees are operational costs of importing goods, not system costs. They scale with procurement volume.
 

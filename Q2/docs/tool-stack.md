@@ -12,7 +12,7 @@
 | **Airtable** | Free | $0 | Core database: purchase requests, vendor DB, PO tracking, inspection records, scorecard. Form views for request intake. Kanban view for PO status. |
 | **Gmail / Google Workspace** | Free (personal) or Business Starter | $0-6 | Email for all vendor communication. Labels and filters for PO tracking. |
 | **Slack** | Free | $0 | Alert channel (#procurement-alerts) for automated notifications. |
-| **Make.com** | Free | $0 | Automation engine connecting Airtable → Slack alerts, Airtable → Gmail notifications. 1,000 credits/month is sufficient for ~50 POs/month with basic automations. |
+| Make.com | Free | $0 | Automation engine connecting Airtable → Slack alerts. 1,000 credits/month, 2 active scenarios, 15-min minimum interval. |
 | **Google Drive** | Free (15GB) | $0 | Storage for drawings, quotes, inspection photos, C of C documents. |
 | **PDF Reader / Editor** | Free (built-in) | $0 | Viewing vendor quotes and drawings. |
 
@@ -39,20 +39,18 @@
 - Automated messages from Make.com for: unacknowledged POs, overdue deliveries, budget threshold alerts, inspection reminders
 - The procurement person monitors this channel daily
 
-**Make.com Automations (5 core workflows):**
-1. New purchase request submitted → determine approval path → notify approver on Slack
-2. PO status = Issued for 3+ days → alert procurement on Slack
-3. PO overdue → alert procurement + requester on Slack and email
-4. Quarterly budget check → if vendor spend > 120% of budget → alert CEO on Slack
-5. PO delivered for 2+ days, not inspected → remind inspector on Slack
+**Make.com Automations (2 core workflows, 1 planned):**
+1. New purchase request submitted with cost > ₹50,000 → notify CEO on Slack
+2. PO past promised delivery date, not yet delivered → alert procurement on Slack
+3. *(Planned, requires Make Core)* PO status = Issued for 3+ days → alert procurement on Slack
 
 ### Scaling Path
 
 | Stage | Monthly POs | Tool Upgrade | New Cost |
 |-------|------------|--------------|----------|
-| Now (seed) | 15-25 | Free plans suffice | $0 |
-| Growth (Series A) | 25-75 | Airtable Team ($20/seat) | $20 |
-| Scale (production) | 75-200 | Airtable Team + Make Core ($12) | $32 |
+| Now (seed) | 15-25 | Free plans suffice (2 automations on Make Free) | $0 |
+| Growth (Series A) | 25-75 | Make Core ($12/mo) for 3rd automation + higher ops | $12 |
+| Scale (production) | 75-200 | Airtable Team ($20/seat) + Make Core ($12) | $32 |
 | Mature | 200+ | Airtable Business ($45/seat) + Make Pro ($21) | $66 |
 
 Even at the mature stage, the total is well under $200/month. The $200 budget ceiling is not a constraint for this system at any realistic scale.
