@@ -43,6 +43,9 @@ The Make.com scenarios are live and connected to the Airtable base, sending aler
 [PO Past Promised Delivery Date Alert](https://eu1.make.com/public/shared-scenario/yt8rKXAbZyU/integration-airtable-slack)
 [New High-Value Purchase Request (₹50,000+)](https://eu1.make.com/public/shared-scenario/PwZ5m7btnBW/new-high-value-purchase-request-50-000)
 
+The Slack channel is active and receiving test alerts from the Make.com scenarios:
+[Slack Channel #procurement-alerts](https://aaryan-mku4543.slack.com/archives/C0B6MEB8CRW)
+
 ## Tools Used
 
 All built on free tiers:
