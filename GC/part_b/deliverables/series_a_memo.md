@@ -159,4 +159,4 @@ The 15–25x step-up from our USD 1M seed is within range for deep-tech hardware
 
 ---
 
-*Sources: qosmic.space, stations.qosmic.space (network dashboard, accessed May 2026), Accel Atoms portfolio, MarketsandMarkets (2025), Dataintelo (2025), Space Norway Annual Report 2024, Tracxn (2026), PitchBook (2026), Entrackr (2025), Carta Q1 2025, arXiv:2507.20908. Financial projections for owned-station economics only — reference the live Excel model at `deliverables/business_model.xlsx`.*
+*Sources: qosmic.space, stations.qosmic.space (network dashboard, accessed May 2026), Accel Atoms portfolio, MarketsandMarkets (2025), Dataintelo (2025), Space Norway Annual Report 2024, Tracxn (2026), PitchBook (2026), Entrackr (2025), Carta Q1 2025, arXiv:2507.20908. Financial projections for owned-station economics only — reference the live Excel model at `[deliverables/business_model.xlsx]`(https://docs.google.com/spreadsheets/d/1lETL9AEdmu7CSNwuwnG74nhw0OEUULiVsHcy-JzIF1M/edit?usp=sharing).*

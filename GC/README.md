@@ -121,3 +121,7 @@ python src/spreadsheet.py
 | Space Norway AR 2024 | KSAT revenue/comparables | Space Norway |
 | MarketsandMarkets 2025 | GSaaS market size | MarketsandMarkets |
 | Tracxn/PitchBook 2026 | Comparable company funding | Tracxn, PitchBook |
+
+## Business Model Spreadsheet on Google Sheets with Edit Access
+The spreadsheet can be found at:
+[Business Model Spreadsheet](https://docs.google.com/spreadsheets/d/1lETL9AEdmu7CSNwuwnG74nhw0OEUULiVsHcy-JzIF1M/edit?usp=sharing)
