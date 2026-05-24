@@ -39,6 +39,10 @@ A complete procurement system for QOSMIC SPACE, covering the full lifecycle from
 The Airtable base is live at:
 [QOSMIC Procurement Base](https://airtable.com/appjG6EmwqTczL6Sk/shrkQDqxASSepMnQL)
 
+The Make.com scenarios are live and connected to the Airtable base, sending alerts to the #procurement-alerts Slack channel:
+[PO Past Promised Delivery Date Alert](https://eu1.make.com/public/shared-scenario/yt8rKXAbZyU/integration-airtable-slack)
+[New High-Value Purchase Request (₹50,000+)](https://eu1.make.com/public/shared-scenario/PwZ5m7btnBW/new-high-value-purchase-request-50-000)
+
 ## Tools Used
 
 All built on free tiers:
