@@ -241,10 +241,11 @@ def build_unit_economics(wb, rows):
     ws.cell(row=pgr+2, column=1, value="Annual CapEx amort."); ws.cell(row=pgr+2, column=2, value=f"=5*Assumptions!B{rows['CapEx per Station']}/Assumptions!B{rows['CapEx Amortization Period']}").number_format = MONEY
     ws.cell(row=pgr+3, column=1, value="Annual Payroll (15 people at maturity)"); ws.cell(row=pgr+3, column=2, value=f"=Assumptions!B{rows['Headcount Year 5']}*Assumptions!B{rows['Avg Salary (India)']}").number_format = MONEY
     ws.cell(row=pgr+4, column=1, value="Annual Overhead"); ws.cell(row=pgr+4, column=2, value=f"=Assumptions!B{rows['Corporate Overhead Year 5']}").number_format = MONEY
-    ws.cell(row=pgr+5, column=1, value="Annual Fixed Cost"); ws.cell(row=pgr+5, column=2, value=f"=B{pgr+1}+B{pgr+2}+B{pgr+3}+B{pgr+4}").number_format = MONEY
-    ws.cell(row=pgr+6, column=1, value="Annual Data Volume (GB)"); ws.cell(row=pgr+6, column=2, value=f"=5*Assumptions!B{rows['GB per Pass']}*Assumptions!B{rows['Passes per Day per Station']}*365*Assumptions!B{rows['Cloud Avail (5 stations)']}").number_format = NUM
-    ws.cell(row=pgr+7, column=1, value="Cost per GB (cents)"); ws.cell(row=pgr+7, column=2, value=f"=B{pgr+5}/B{pgr+6}*100").number_format = '$#,##0.000'
-    ws.cell(row=pgr+8, column=1, value="Revenue at 40% util, $1/GB"); ws.cell(row=pgr+8, column=2, value=f"=B{pgr+6}*0.4*Assumptions!B{rows['Data Price per GB']}").number_format = MONEY
+    ws.cell(row=pgr+5, column=1, value="Platform Operations (AWS)"); ws.cell(row=pgr+5, column=2, value=f"=Assumptions!B{rows['AWS Monthly Cost Year 5']}*12").number_format = MONEY
+    ws.cell(row=pgr+6, column=1, value="Annual Fixed Cost (~$1,054K at maturity)"); ws.cell(row=pgr+6, column=2, value=f"=B{pgr+1}+B{pgr+2}+B{pgr+3}+B{pgr+4}+B{pgr+5}").number_format = MONEY
+    ws.cell(row=pgr+7, column=1, value="Annual Data Volume (GB)"); ws.cell(row=pgr+7, column=2, value=f"=5*Assumptions!B{rows['GB per Pass']}*Assumptions!B{rows['Passes per Day per Station']}*365*Assumptions!B{rows['Cloud Avail (5 stations)']}").number_format = NUM
+    ws.cell(row=pgr+8, column=1, value="Cost per GB (cents)"); ws.cell(row=pgr+8, column=2, value=f"=B{pgr+6}/B{pgr+7}*100").number_format = '#,##0.000'
+    ws.cell(row=pgr+9, column=1, value="Revenue at 40% util, $1/GB"); ws.cell(row=pgr+9, column=2, value=f"=B{pgr+7}*0.4*Assumptions!B{rows['Data Price per GB']}").number_format = MONEY
 
     ws.column_dimensions['A'].width = 38; ws.column_dimensions['B'].width = 18; ws.column_dimensions['E'].width = 40
 
