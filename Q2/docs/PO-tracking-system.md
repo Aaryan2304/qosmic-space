@@ -46,21 +46,22 @@ Each purchase order moves through the following states. Transitions are logged i
 
 ---
 
-## 2. Automated Alert Triggers
+## 2. Alert Triggers
 
-All alerts are configured in Airtable automations. Each sends a Slack message to the procurement channel and emails the person responsible.
+All 7 alert triggers are defined below. 2 are automated via Make.com (marked ✅). The remaining 5 are manual processes handled by the procurement person during their daily review of the Airtable Kanban board. At 15-25 POs/month, a human review takes 5 minutes a day and catches all of these cases. Full automation of all 7 would require Make.com Core ($12/month) for additional scenario slots and more complex cross-record logic.
 
-| Trigger | Condition | Action | Recipient |
-|---------|-----------|--------|-----------|
-| PO not acknowledged | Status = Issued for > 3 business days | Slack alert + email | Procurement |
-| Ship date approaching | Status = In Production, today > (promised ship date - 5 days) | Slack reminder | Procurement |
-| Delivery overdue | Status ≠ Delivered, today > promised delivery date | Slack alert + email | Procurement + requester |
-| No tracking update | Status = In Transit for > 7 days with no location update | Slack alert | Procurement |
-| Customs hold > 3 days | Status = Customs Hold for > 3 business days | Slack alert + email | Procurement + CEO (if high-value) |
-| Quarterly budget exceed | Sum of PO values for this vendor in current quarter > 120% of quarterly budget | Slack alert + email | Procurement + CEO |
-| Inspection pending | Status = Delivered for > 2 business days, not yet inspected | Slack reminder | QA/inspector + procurement |
+| # | Trigger | Automated | Condition | Action | Recipient |
+|---|---------|-----------|-----------|--------|-----------|
+| 1 | PO not acknowledged | ❌ Manual | Status = Issued for > 3 business days | Slack alert + email | Procurement |
+| 2 | Ship date approaching | ❌ Manual | Status = In Production, today > (promised ship date - 5 days) | Slack reminder | Procurement |
+| 3 | **Delivery overdue** | ✅ Make.com | Status ≠ Delivered/Accepted, today > promised delivery date | Slack alert + email | Procurement + requester |
+| 4 | No tracking update | ❌ Manual | Status = In Transit for > 7 days with no location update | Slack alert | Procurement |
+| 5 | Customs hold > 3 days | ❌ Manual | Status = Customs Hold for > 3 business days | Slack alert + email | Procurement + CEO (if high-value) |
+| 6 | Quarterly budget exceed | ❌ Manual | Sum of PO vendor spend in quarter > 120% of budget | Slack alert + email | Procurement + CEO |
+| 7 | Inspection pending | ❌ Manual | Status = Delivered for > 2 business days, not yet inspected | Slack reminder | QA/inspector + procurement |
+| 8 | **High-value request >₹50K** | ✅ Make.com | New Purchase Request with Total Estimated Cost > 50000 | Slack alert for CEO approval | CEO |
 
-**Implementation:** 2 alerts are automated via Make.com (see tool-stack.md). The remaining alerts are manual processes handled by the procurement person during their daily review of the Airtable Kanban board. Full automation of all 7 alerts would require upgrading Make.com to Core for additional scenario slots.
+**Implementation:** Scenarios 3 and 8 are live on Make.com's free tier. Scenarios 1, 2, 4, 5, 6, and 7 are documented and ready for automation when the company scales past the Free tier's 2-scenario limit.
 
 ---
 

@@ -48,8 +48,8 @@ I then cross-check against published market research reports to validate the ran
 | Metric | Value | Rationale |
 |--------|-------|-----------|
 | Per-session data volume | 10-100 GB | At 3-10 Gbps over 300 second pass |
-| Price per GB (optical, 2025) | $5-15/GB | RF ground station pricing is $1-5/GB. Optical is premium for now (faster, more secure). |
-| Revenue per session | $50-1,500 | Wide range depending on data volume and pricing tier |
+| Price per GB (optical, 2025) | $1/GB | RF ground station pricing is $3-15/GB. Optical is cheaper (faster, more secure). |
+| Revenue per session | $10-100 | Wide range depending on data volume and pricing tier |
 
 ---
 
@@ -61,8 +61,8 @@ I then cross-check against published market research reports to validate the ran
 |--------|-------|
 | Addressable satellites | 750 |
 | Avg sessions/satellite/year | 800 (assume ~50% cloud-free usable) |
-| Avg revenue/session | $100 |
-| **Annual market** | **750 × 800 × $100 = $60M** |
+| Avg revenue/session | $50 |
+| **Annual market** | **750 × 800 × $50 = $30M** |
 
 ### Moderate Estimate
 
@@ -70,8 +70,8 @@ I then cross-check against published market research reports to validate the ran
 |--------|-------|
 | Addressable satellites | 1,500 |
 | Avg sessions/satellite/year | 1,200 |
-| Avg revenue/session | $200 |
-| **Annual market** | **1,500 × 1,200 × $200 = $360M** |
+| Avg revenue/session | $75 |
+| **Annual market** | **1,500 × 1,200 × $75 = $135M** |
 
 ### Optimistic Estimate
 
@@ -79,8 +79,8 @@ I then cross-check against published market research reports to validate the ran
 |--------|-------|
 | Addressable satellites | 2,100 |
 | Avg sessions/satellite/year | 1,500 |
-| Avg revenue/session | $300 |
-| **Annual market** | **2,100 × 1,500 × $300 = $945M** |
+| Avg revenue/session | $100 |
+| **Annual market** | **2,100 × 1,500 × $100 = $315M** |
 
 ---
 
